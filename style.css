@@ -34,7 +34,7 @@ html {
 /* have a look into body once after we done with rest of the styling  */
 body {
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 0 10px;
   min-width: 320px;
   background-color: var(--backgroundColor);
 }
@@ -91,6 +91,7 @@ a {
   max-width: 120rem;
   margin: 0 auto;
   padding: 9.6rem 2.4rem;
+
 }
 
 :is(
@@ -992,6 +993,135 @@ footer {
   }
 }
 
+
+.faltu {
+  padding-left: 26.9rem;
+  padding-top: 5rem;
+}
+.containerrr {
+  display: flex;
+  
+  align-items: center;
+  
+}
+.circles {
+  width: 150px; /* Adjust width as needed */
+  height: 150px; /* Adjust height as needed */
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: #6d33e0;
+  z-index: 10;
+  color: white;
+  padding: 30px;
+  
+  
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.897); 
+
+}
+.circle {
+  width: 300px; /* Adjust width as needed */
+  height: 300px; /* Adjust height as needed */
+  border: 2px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 40px;
+  left: -30px;
+  background-color: #9e77ec;
+}
+.manycircle {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.cc {
+  width: 50px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+  border: 2px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  
+  background-color: #460ac0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.897); 
+}
+.c1, .c5 {
+  left: -120px;
+}
+.c2, .c4 {
+  left: -50px;
+}
+.c3 {
+  left: -32px;
+}
+.dashline {
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
+  
+}
+
+.dd {
+  width: 200px;
+  height: 1px;
+  border-bottom: 1px dashed black; /* Dashed line style */
+ 
+}
+
+/* Adjust left positions to align lines to the left */
+.d1, .d5 {
+  margin-left: -120px;
+}
+
+.d2, .d4 {
+  margin-left: -50px;
+}
+
+.d3 {
+  margin-left: -32px;
+}
+.boxx {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.bb {
+  border: 1px solid;
+  padding: 10px;
+  font-size: small;
+  border-radius: 20px;
+  background-color: #cebdf0;
+  
+}
+.bb p {
+  font-size: 14px; /* Adjust font size as needed */
+  line-height: 1.4; /* Adjust line height for readability */
+  margin-bottom: 10px; /* Adjust bottom margin as needed */
+}
+.b1, .b5 {
+  margin-left: -120px;
+}
+
+.b2, .b4 {
+  margin-left: -50px;
+}
+
+.b3 {
+  margin-left: -32px;
+}
+
 /*****  Add to Cart page ends *****/
 
 /*****  media queries Section *****/
@@ -1138,9 +1268,15 @@ footer {
     text-align: left;
     padding: 0;
   }
+  .section-products .faltu {
+    padding-left: 15px;
+  }
 }
 
 @media (width <= 768px) {
+  .circles, .circle {
+    display: none;
+  }
   .grid-two--cols {
     grid-template-columns: 1fr;
   }
@@ -1163,7 +1299,8 @@ footer {
 
   #productCartContainer .card {
     width: 100%;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     /* grid-template-columns: 0.5fr 0.5fr 1fr 0.5fr 1fr 1fr; */
     grid-template-columns: 0.5fr 0.1fr repeat(2, 1fr);
     align-items: center;
@@ -1192,7 +1329,7 @@ footer {
     flex-direction: column;
     gap: 3.2rem;
   }
-
+  
   .section-why--choose {
     & img {
       width: 30%;
@@ -1220,132 +1357,50 @@ footer {
     padding: 6.4rem 0rem 2.4rem 0rem;
   }
 }
-/***** End  media queries Section *****/
-.containerrr {
-  display: flex;
-  
-  align-items: center;
-  
-}
-.circles {
-  width: 150px; /* Adjust width as needed */
-  height: 150px; /* Adjust height as needed */
-  border: 2px solid black;
-  border-radius: 50%;
-  background-color: #6d33e0;
-  z-index: 10;
-  color: white;
-  padding: 30px;
-  
-  
-  text-align: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.897); 
 
-}
-.circle {
-  width: 300px; /* Adjust width as needed */
-  height: 300px; /* Adjust height as needed */
-  border: 2px solid black;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  padding: 40px;
-  left: -30px;
-  background-color: #9e77ec;
-}
-.manycircle {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-.cc {
-  width: 50px; /* Adjust width as needed */
-  height: 50px; /* Adjust height as needed */
-  border: 2px solid black;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  
-  background-color: #460ac0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.897); 
-}
-.c1, .c5 {
-  left: -120px;
-}
-.c2, .c4 {
-  left: -50px;
-}
-.c3 {
-  left: -32px;
-}
-.dashline {
-  display: flex;
-  flex-direction: column;
-  gap: 75px;
-  
-}
-
-.dd {
-  width: 200px;
-  height: 1px;
-  border-bottom: 1px dashed black; /* Dashed line style */
+@media (width <= 380px) {
  
+.navbar .nav-link.homee {
+  display: none;
+}
+.section-hero .hero-heading{
+  font-size: 10px;
+}
+.hero-para {
+  display: none;
+}
+.container .containerrr .boxx {
+  padding-left: 20px;
 }
 
-/* Adjust left positions to align lines to the left */
-.d1, .d5 {
-  margin-left: -120px;
+.section-products .container {
+  padding-left: 0;
+  padding-right: 0;
 }
-
-.d2, .d4 {
-  margin-left: -50px;
+.container .circles {
+  display: none;
 }
-
-.d3 {
-  margin-left: -32px;
+.container .circle {
+  display: none;
 }
-.boxx {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.container .manycircle {
+  display: none;
 }
-.bb {
-  border: 1px solid;
-  padding: 10px;
-  font-size: small;
-  border-radius: 20px;
-  background-color: #cebdf0;
-  
-}
-.bb p {
-  font-size: 14px; /* Adjust font size as needed */
-  line-height: 1.4; /* Adjust line height for readability */
-  margin-bottom: 10px; /* Adjust bottom margin as needed */
-}
-.b1, .b5 {
-  margin-left: -120px;
-}
-
-.b2, .b4 {
-  margin-left: -50px;
-}
-
-.b3 {
-  margin-left: -32px;
-}
-@media only screen and (max-width: 700px){
-  .circles, .circle {
+  .container .dashline {
     display: none;
   }
+  .b1, .b5 {
+    margin-left: -20px;
+  }
+  
+  .b2, .b4 {
+    margin-left: -20px;
+  }
+  
+  .b3 {
+    margin-left: -20px;
+  }
+  
 }
+
+/***** End  media queries Section *****/

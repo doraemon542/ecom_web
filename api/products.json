@@ -2,7 +2,7 @@
     {
       "id": 1,
       "name": "Holud",
-      "category": "Computers",
+      "category": "HoludJama",
       "brand": "ExampleBrand",
       "price": 999.99,
       "stock": 50,
@@ -12,7 +12,7 @@
     {
       "id": 2,
       "name": "Shobuj",
-      "category": "Mobiles",
+      "category": "ShobujJama",
       "brand": "TechGadget",
       "price": 499.99,
       "stock": 100,
@@ -22,7 +22,7 @@
     {
       "id": 3,
       "name": "Nil",
-      "category": "Audio",
+      "category": "NilJama",
       "brand": "SoundBeats",
       "price": 149.99,
       "stock": 30,
@@ -32,7 +32,7 @@
     {
       "id": 4,
       "name": "Lal",
-      "category": "Wearables",
+      "category": "LalJama",
       "brand": "FitTech",
       "price": 199.99,
       "stock": 20,
@@ -42,7 +42,7 @@
     {
       "id": 5,
       "name": "Kala",
-      "category": "Audio",
+      "category": "KalaJama",
       "brand": "SoundBeats",
       "price": 149.99,
       "stock": 30,
@@ -52,7 +52,7 @@
     {
       "id": 6,
       "name": "Shada",
-      "category": "Video",
+      "category": "ShadaJama",
       "brand": "Samsung",
       "price": 199.99,
       "stock": 20,
